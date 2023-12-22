@@ -6,7 +6,6 @@ import com.ll.mb.domain.product.product.entity.Product.Product;
 import com.ll.mb.global.jpa.BaseEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToOne;
 import lombok.*;
 
 @Entity
@@ -19,6 +18,6 @@ import lombok.*;
 public class CartItem extends BaseEntity {
     @ManyToOne
     private Member buyer;
-    @OneToOne
+    @ManyToOne
     private Product product;
 }
