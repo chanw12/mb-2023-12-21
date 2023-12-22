@@ -31,6 +31,7 @@ public class BaseEntity {
     @LastModifiedDate
     private LocalDateTime modifyDate;
 
+
     public String getModelName() {
         return Ut.str.lcfirst(this.getClass().getSimpleName());
     }

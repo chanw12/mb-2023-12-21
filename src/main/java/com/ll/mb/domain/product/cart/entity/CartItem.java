@@ -18,7 +18,7 @@ import lombok.*;
 @ToString(callSuper = true)
 public class CartItem extends BaseEntity {
     @ManyToOne
-    private Member member;
+    private Member buyer;
     @OneToOne
     private Product product;
 }
